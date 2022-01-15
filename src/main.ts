@@ -34,7 +34,7 @@ router.get("/", (req, res) => {
 	let { url, sz } = req.query;
 	const def_res = () => res.send({ status: "ok" }); //`<body bgcolor="black"></body>`
 	if (typeof url == "string") {
-		const sizes = [16, 32, 64, 128];
+		const sizes = [16, 32, 64, 128, 256];
 		const favicon_req = `https://www.google.com/s2/favicons?sz=${
 			sz ?? sizes.pop()
 		}&domain_url=${url}`;
