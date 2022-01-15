@@ -1,0 +1,10 @@
+[build]
+  functions = "functions"
+  command = "npm run net:build"
+
+[functions]
+  node_bundler = "esbuild"
+
+[dev]
+  command = "npm run net:serve"
+  publish = "public"

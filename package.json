@@ -1,0 +1,43 @@
+{
+	"name": "gcon",
+	"version": "1.0.0",
+	"description": "",
+	"main": "functions/api.js",
+	"scripts": {
+		"_________________________________________________________EsBuild": "",
+		"build": "cross-env NODE_ENV=production esr scripts/builder.ts",
+		"watch": "cross-env NODE_ENV=development esr scripts/builder.ts -w",
+		"_________________________________________________________Clean": "",
+		"clean": "rimraf functions",
+		"_________________________________________________________Netlify": "",
+		"net:serve": "cross-env NETLIFY=1 netlify-lambda serve functions -s",
+		"net:build": "cross-env NETLIFY=1 npm run build",
+		"net:watch": "cross-env NETLIFY=1 npm run watch",
+		"net:start": "npm run net:build && npm run net:serve",
+		"_________________________________________________________Node": "",
+		"node:serve": "node functions/api -listen -p 9000",
+		"start": "npm run build && npm run node:serve"
+	},
+	"keywords": [],
+	"author": "shaklain <48572696+shaklain125@users.noreply.github.com>",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"netlify-lambda": "^2.0.15",
+		"serverless-http": "^2.7.0"
+	},
+	"devDependencies": {
+		"@types/axios": "^0.14.0",
+		"@types/cheerio": "^0.22.30",
+		"@types/express": "^4.17.13",
+		"@types/node": "^17.0.8",
+		"@types/nodemon": "^1.19.1",
+		"cross-env": "^7.0.3",
+		"esbuild": "^0.14.11",
+		"esbuild-runner": "^2.2.1",
+		"fs-extra": "^10.0.0",
+		"nodemon": "^2.0.15",
+		"rimraf": "^3.0.2",
+		"typescript": "^4.5.4"
+	}
+}

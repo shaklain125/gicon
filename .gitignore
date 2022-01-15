@@ -1,0 +1,8 @@
+node_modules
+functions
+
+# Environment Variables
+.env
+.env.build
+
+.vercel

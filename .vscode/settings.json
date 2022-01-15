@@ -1,0 +1,43 @@
+{
+	"files.exclude": {
+		"**/.git": true,
+		"node_modules": true,
+		"*.URL": true,
+		"*.url": true,
+		"*.lnk": true,
+		"**/package-lock.json": true,
+		"**/yarn.lock": true
+	},
+
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/*.code-search": true,
+		"**/dist": true
+	},
+
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"javascript.preferences.importModuleSpecifier": "non-relative",
+	"javascript.preferences.importModuleSpecifierEnding": "minimal",
+	"typescript.preferences.importModuleSpecifierEnding": "minimal",
+
+	"js/ts.implicitProjectConfig.checkJs": false,
+
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+
+	"html-css-class-completion.enableEmmetSupport": true,
+	"html.format.endWithNewline": true,
+
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.organizeImports": true
+	},
+
+	"explorer.confirmDelete": true,
+
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+}
