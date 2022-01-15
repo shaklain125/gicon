@@ -35,3 +35,7 @@ https://gicon.vercel.app/?sz=64&url=netlify.com
 ```
 https://gicon.netlify.app/.netlify/functions/api?sz=128&url=youtube.com
 ```
+
+```
+https://gicon.netlify.app/.netlify/functions/api?url=google.com
+```
