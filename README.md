@@ -13,10 +13,10 @@ Google's favicon api contains redirects which means that not all application wil
 -   `https://gicon.vercel.app/?{param}={value}`
 -   `https://gicon.netlify.app/.netlify/functions/api?{param}={value}`
 
-| Param | Value    | Description                                                                                                           |
-| ----- | -------- | --------------------------------------------------------------------------------------------------------------------- |
-| _url_ | `string` | The site url or domain                                                                                                |
-| _sz_  | `number` | The size of the favicon e.g. 16, 32, 64, 128, 256.<br> **Default** is 256.<br> Note that it may not reach exact size. |
+| Param | Value    | Description                                                                                                               |
+| ----- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
+| _url_ | `string` | The site url or domain                                                                                                    |
+| _sz_  | `number` | The size of the favicon e.g. 16, 32, 64, 128, 256.<br> **Default** is 256.<br> Note that it may not reach the exact size. |
 
 ### Examples
 
