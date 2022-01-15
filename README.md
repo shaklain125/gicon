@@ -39,3 +39,9 @@ https://gicon.netlify.app/.netlify/functions/api?sz=128&url=youtube.com
 ```
 https://gicon.netlify.app/.netlify/functions/api?url=google.com
 ```
+
+## Libraries
+
+-   [x] Express
+-   [x] Serverless-http
+-   [x] Axios
